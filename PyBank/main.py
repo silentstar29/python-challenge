@@ -66,16 +66,16 @@ for month in months:
         
 greatest_decrease_month = date[greatest_decrease_month_index]
 greatest_decrease_formatted = '${:,.2f}'.format(greatest_decrease)
-print(f"Greatest increase: {greatest_decrease_formatted} ({greatest_decrease_month})")
+print(f"Greatest decrease: {greatest_decrease_formatted} ({greatest_decrease_month})")
 print("------------------------------------")   
 
 
 output_file = os.path.join("bank1_data.txt")
-with open('bank_data.txt', 'w') as f:
+with open('bank1_data.txt', 'w') as f:
          f.write('Finansial Analysis')
          f.write('---------------------')
          f.write(" Total Months: " + str(total_months))
          f.write(" Total: "+ str(total_formated) )
          f.write(" Average change: " + str(avg_change_formatted))
          f.write(" Greatest increase: " + str(greatest_increase_formatted)+ str({greatest_increase_month}))
-         f.write(" Greatest increase: "+ str(greatest_decrease_formatted)+ str({greatest_decrease_month}))
+         f.write(" Greatest decrease: "+ str(greatest_decrease_formatted)+ str({greatest_decrease_month}))
