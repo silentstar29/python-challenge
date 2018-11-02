@@ -1,2 +1,2 @@
 # python-challenge
-In this challenge we imported data from csv file to python and analyzedit and exported results to txt file.
+In this H-W challenge we imported data from csv file to python,analyzed it and exported results to txt file.
